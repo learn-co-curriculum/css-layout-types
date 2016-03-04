@@ -2,19 +2,38 @@
 
 ## Overview
 
-...
+This lesson will discuss sizing elements and the differences bewteen using pixels, ems, and percents.
 
 ## Objectives
 
-1. ...
+1. Layout Types: Fixed, Elastic, and Fluid 
+2. Pros and cons of sizing using pixels
+3. Pros and cons of sizing using ems
+4. Pros and cons of sizing using percents
 
-## Lecture Title
+## Scaling Elements
 
-<!-- iframe video embed goes here -->
+<iframe width="640" height="480" src="https://www.youtube.com/embed/E9PFJLlJJ8Q?rel=0" frameborder="0" allowfullscreen></iframe>
 
 *Note: Slides for this lecture video are provided in the resources at the bottom of this lesson.*
 
-### Lecture Content Subhead
+### Layout Types
+
+...
+
+#### Fixed (px)
+
+In a fixed layout, elements are sized using pixels.
+
+#### Elastic (em)
+
+...
+
+#### Fluid (%)
+
+...
+
+#### Min/Max
 
 ...
 
