@@ -41,17 +41,31 @@ Fluid (liquid) layouts size elements using (%) percents. This allows for a layou
 
 #### Scaling Properties
 
+...
+
 `width: 1px | 1em | 100%`
+
+...
 
 `min-width: 1px | 1em | 100%`
 
+...
+
 `max-width: 1px | 1em | 100%`
+
+...
 
 `height: 1px | 1em | 100%`
 
+...
+
 `min-height: 1px | 1em | 100%`
 
+...
+
 `max-height: 1px | 1em | 100%`
+
+...
 
 ## Summary
 
