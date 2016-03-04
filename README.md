@@ -6,10 +6,11 @@ This lesson will discuss sizing elements and the differences bewteen using pixel
 
 ## Objectives
 
-1. Layout Types: Fixed, Elastic, and Fluid 
-2. Pros and cons of sizing using pixels
-3. Pros and cons of sizing using ems
-4. Pros and cons of sizing using percents
+1. Explore different CSS layout types.
+2. Sizing elements using (px) pixel values.
+2. Sizing elements using (em) em values.
+3. Sizing elements using (%) percent values.
+4. Sizing properties: width, min-width, max-width, height, min-height, max-height.
 
 ## Scaling Elements
 
@@ -19,19 +20,23 @@ This lesson will discuss sizing elements and the differences bewteen using pixel
 
 ### Layout Types
 
-...
+Lets discuss the layout types: fixed (sometimes referred to as static), elastic, and fluid (sometimes referred to as liquid).
 
 #### Fixed (px)
 
-In a fixed layout, elements are sized using pixels.
+In a fixed (static) layout, elements are sized using pixels. One of the nice things about this is that our elements will be the same size on all screens. It is a measurement that is independent and uneffected by the size of the device we are viewing from. The only downside is if we create an element that is wider or taller than the device size we will see scrollbars, and the user will have to scroll to see the rest of the content that is out of view. Or, if the screen size is much larger than our element there may be substantial white space around the element. In other words we are not neccesarily ustilizing all of the screen space.
 
 #### Elastic (em)
 
-...
+Elastic layouts size elements using (em) ems. An em is a typographic unit that describes a the size of a single character, typically the default is 1em = 16 px in size.
+
+    “A pixel is an unscalable dot on a computer screen, whereas an em is a square of its font size. Because font sizes vary, the em is a relative unit that responds to users’ text-size preferences.” – Patrick Griffiths, A List Apart
+
+One advatage of using ems to scale elements in a layout is that as a user scales the text up and down using their zoom settings it will also scale the elements set as ems. this way your text will always be in proportion to the container it is within. There are also some disadvantages such as, if a user scales elements that occupy the same space overlap is possible unless the developer invests a lot of time testing font sizes across many different device sizes and make s adjustments accordingly. 
 
 #### Fluid (%)
 
-...
+Fluid (liquid) layouts 
 
 #### Min/Max
 
