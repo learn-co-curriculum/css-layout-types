@@ -20,7 +20,7 @@ This lesson will discuss sizing elements and the differences bewteen using pixel
 
 ### Layout Types
 
-Lets discuss the layout types: fixed (sometimes referred to as static), elastic, and fluid (sometimes referred to as liquid).
+Let's discuss CSS layout types: fixed (sometimes referred to as static), elastic, and fluid (sometimes referred to as liquid).
 
 #### Fixed (px)
 
