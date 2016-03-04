@@ -81,5 +81,5 @@ Fluid (liquid) layouts size elements using (%) percents. This allows for a layou
 - [MDN - CSS - Height](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
 - [MDN - CSS - Min-Height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)
 - [MDN - CSS - Max-Height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
-- [Smashing Magazibe - Which Layout Is Right For You](https://www.smashingmagazine.com/2009/06/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/)
+- [Smashing Magazine - Which Layout Is Right For You](https://www.smashingmagazine.com/2009/06/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/)
 
