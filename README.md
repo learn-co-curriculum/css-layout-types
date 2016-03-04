@@ -30,7 +30,8 @@ In a fixed (static) layout, elements are sized using pixels. One of the nice thi
 
 Elastic layouts size elements using (em) ems. An em is a typographic unit that describes a the size of a single character, typically the default is 1em = 16 px in size.
 
-    “A pixel is an unscalable dot on a computer screen, whereas an em is a square of its font size. Because font sizes vary, the em is a relative unit that responds to users’ text-size preferences.” – Patrick Griffiths, A List Apart
+> “A pixel is an unscalable dot on a computer screen, whereas an em is a square of its font size. Because font sizes vary, the em is a relative unit that responds to users’ text-size preferences.” 
+> – Patrick Griffiths, A List Apart
 
 One advatage of using ems to scale elements in a layout is that as a user scales the text up and down using their zoom settings it will also scale the elements set as ems. this way your text will always be in proportion to the container it is within. There are also some disadvantages such as, if a user scales elements that occupy the same space overlap is possible unless the developer invests a lot of time testing font sizes across many different device sizes and make s adjustments accordingly. 
 
