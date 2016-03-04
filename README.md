@@ -39,7 +39,7 @@ One advatage of using ems to scale elements in a layout is that as a user scales
 
 Fluid (liquid) layouts size elements using (%) percents. This allows for a layout that will stretch and expeand or contract to the size of the users device. This allows developers to make use of the entirety of space on the screen. Also your users will never see scrollbars if used it is implemented correctly. Some drawbacks would be that as designers we lose some control over where media and text will wrap as screens change size on different devices.
 
-#### Scaling Properties
+### Scaling Properties
 
 ...
 
