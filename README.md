@@ -2,19 +2,21 @@
 
 ## Overview
 
-This lesson will discuss sizing elements and the differences between using pixels, ems, and percents.
+This lesson will discuss sizing elements and the differences between using pixels, ems, percents, and the overflow property.
 
 ## Objectives
 
-1. Explore different CSS layout types.
-2. Sizing elements using (px) pixel values.
-2. Sizing elements using (em) em values.
-3. Sizing elements using (%) percent values.
-4. Sizing properties: width, min-width, max-width, height, min-height, and max-height.
+1. CSS layout types: Fixed, Elastic, and Fluid.
+2. Sizing properties: width, min-width, max-width, height, min-height, and max-height.
+3. Sizing elements using (px) pixel values.
+4. Sizing elements using (em) em values.
+5. Sizing elements using (%) percent values.
+6. Overflow property.
+7. Creating fluid heights.
 
 ## Scaling Elements
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/E9PFJLlJJ8Q?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLj148bJp5wixkMfkKeoVyCK3gc2bAL9U1" frameborder="0" allowfullscreen></iframe>
 
 *Note: Slides for this lecture video are provided in the resources at the bottom of this lesson.*
 
@@ -59,6 +61,14 @@ Fluid (liquid) layouts size elements using (%) percents. This allows for a layou
 
 Hybrid layouts use a combination of all of the size values mentioned above. Ultimately it is up to us as designers to choose the correct layout for different situations. It is best to understand the pros and cons of each type and undertsand when to use one the other or blend them together. More on repsonsive design techniques will be discussed in a later lesson.
 
+### Overflow
+
+...
+
+### Creating Fluid Heights
+
+...
+
 ## Summary
 
 - We can size elements using width, height, and min and max values. These properties accept pixels, ems, and percents as values.
@@ -66,6 +76,8 @@ Hybrid layouts use a combination of all of the size values mentioned above. Ulti
 - Elastic Layouts use ems (a typographic unit of measure). Ems insure that when a user scales up and down the content, it will maintain the size relationship between the layout element and the size of the text within it. This requires more testing to insure that none of the content overlaps at different sizes.
 - Fluid layouts are sized using percents. They will expand or contract to the size of the device. On larger screens they will be larger, on smaller screens smaller. This limits our control over when content or media will wrap to the next line below.
 - Ultimately it is up to us to understand the pros and cons of each type, and design the best layout to suit our needs and preference.
+- ...
+- ...
 
 ## Resources
 
