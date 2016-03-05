@@ -1,0 +1,14 @@
+languages:
+  - css
+tags:
+  - layout types
+  - fixed
+  - fluid
+  - elastic
+  - static
+  - liquid
+  - adaptive
+  - responsive
+type:
+  - lecture
+resources: 11
