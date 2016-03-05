@@ -2,7 +2,7 @@
 
 ## Overview
 
-This lesson will discuss sizing elements and the differences bewteen using pixels, ems, and percents.
+This lesson will discuss sizing elements and the differences between using pixels, ems, and percents.
 
 ## Objectives
 
@@ -18,13 +18,29 @@ This lesson will discuss sizing elements and the differences bewteen using pixel
 
 *Note: Slides for this lecture video are provided in the resources at the bottom of this lesson.*
 
+### Scaling Properties
+
+In order to size our elements we can use the width, height, and min and max properties for each. Below are a list of these properties with some possible values separated by `|` pipes.
+
+`width: 1px | 1em | 100%`
+
+`min-width: 1px | 1em | 100%`
+
+`max-width: 1px | 1em | 100%`
+
+`height: 1px | 1em | 100%`
+
+`min-height: 1px | 1em | 100%`
+
+`max-height: 1px | 1em | 100%`
+
 ### Layout Types
 
 Let's discuss CSS layout types: fixed (sometimes referred to as static), elastic, and fluid (sometimes referred to as liquid).
 
 #### Fixed (px)
 
-In a fixed (static) layout, elements are sized using pixels. One of the nice things about this is that our elements will be the same size on all screens. It is a measurement that is independent and uneffected by the size of the device we are viewing from. The only downside is if we create an element that is wider or taller than the device size we will see scrollbars, and the user will have to scroll to see the rest of the content that is out of view. Or, if the screen size is much larger than our element there may be substantial white space around the element. In other words we are not neccesarily ustilizing all of the screen space.
+In a fixed (static) layout, elements are sized using pixels. One of the nice things about this is that our elements will be the same size on all screens. It is a measurement that is independent and uneffected by the size of the device we are viewing from. The only downside is if we create an element that is wider or taller than the device size we will see scrollbars, and the user will have to scroll to see the rest of the content that is out of view. Or, if the screen size is much larger than our element there may be substantial white space around the element. In other words we are not neccesarily utilizing all of the screen space.
 
 #### Elastic (em)
 
@@ -39,37 +55,17 @@ One advatage of using ems to scale elements in a layout is that as a user scales
 
 Fluid (liquid) layouts size elements using (%) percents. This allows for a layout that will stretch and expeand or contract to the size of the users device. This allows developers to make use of the entirety of space on the screen. Also your users will never see scrollbars if used it is implemented correctly. Some drawbacks would be that as designers we lose some control over where media and text will wrap as screens change size on different devices.
 
-### Scaling Properties
+#### Hybrid
 
-...
-
-`width: 1px | 1em | 100%`
-
-...
-
-`min-width: 1px | 1em | 100%`
-
-...
-
-`max-width: 1px | 1em | 100%`
-
-...
-
-`height: 1px | 1em | 100%`
-
-...
-
-`min-height: 1px | 1em | 100%`
-
-...
-
-`max-height: 1px | 1em | 100%`
-
-...
+Hybrid layouts use a combination of all of the size values mentioned above. Ultimately it is up to us as designers to choose the correct layout for different situations. It is best to understand the pros and cons of each type and undertsand when to use one the other or blend them together. More on repsonsive design techniques will be discussed in a later lesson.
 
 ## Summary
 
-- ...
+- We can size elements using width, height, and min and max values. These properties accept pixels, ems, and percents as values.
+- Fixed Layouts use pixels. Pixels size look sthe same on all devices, but may create scrollbars of the content is wider than the device or leave empty space if the content is much smaller than the device size.
+- Elastic Layouts use ems (a typographic unit of measure). Ems insure that when a user scales up and down the content, it will maintain the size relationship between the layout element and the size of the text within it. This requires more testing to insure that none of the content overlaps at different sizes.
+- Fluid layouts are sized using percents. They will expand or contract to the size of the device. On larger screens they will be larger, on smaller screens smaller. This limits our control over when content or media will wrap to the next line below.
+- Ultimately it is up to us to understand the pros and cons of each type, and design the best layout to suit our needs and preference.
 
 ## Resources
 
