@@ -4,6 +4,8 @@
 
 This lesson will discuss sizing elements and the differences between using pixels, ems, percents, and the overflow property.
 
+Make sure to check out the code examples in the Resources section to see how these properties work!
+
 ## Objectives
 
 1. CSS layout types: Fixed, Elastic, and Fluid.
@@ -13,12 +15,6 @@ This lesson will discuss sizing elements and the differences between using pixel
 5. Sizing elements using (%) percent values.
 6. Overflow property.
 7. Creating fluid heights.
-
-## Scaling Elements
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLj148bJp5wixkMfkKeoVyCK3gc2bAL9U1" frameborder="0" allowfullscreen></iframe>
-
-*Note: Slides for this lecture video are provided in the resources at the bottom of this lesson.*
 
 ### Layout Types
 
@@ -109,7 +105,6 @@ html, body, div {
 
 ## Resources
 
-- [Presentation Slides](https://docs.google.com/presentation/d/1UTUWDczUiDZ6byuhyHv0L3zJXQjdlnZheZXhRVLOL3Q/edit?usp=sharing)
 - [Box Sizing - Code Example](http://jsfiddle.net/flatiron_school/99Tgm/)
 - [Fluid Height - Code Example](http://jsfiddle.net/flatiron_school/zDBf3/)
 - [Overflow - Code Example](http://jsfiddle.net/flatiron_school/sFfw5/)
