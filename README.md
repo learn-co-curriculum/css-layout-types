@@ -134,7 +134,7 @@ elements (html, body) to 100% height also.
 <body>
   <div>Hello</div>
 </body>
-``
+```
 
 ```css
 html, body, div {
