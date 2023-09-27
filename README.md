@@ -2,13 +2,13 @@
 
 ## Learning Goals
 
-- CSS layout types: Fixed, Elastic, and Fluid.
-- Sizing properties: width, min-width, max-width, height, min-height, and max-height.
-- Sizing elements using (px) pixel values.
-- Sizing elements using (em) em values.
-- Sizing elements using (%) percent values.
-- Overflow property.
-- Creating fluid heights.
+- Use CSS layout types: Fixed, Elastic, and Fluid
+- Set sizing properties: width, min-width, max-width, height, min-height, and max-height
+- Set sizing elements using (px) pixel values
+- Set sizing elements using (em) em values
+- Set sizing elements using (%) percent values
+- Use the overflow property
+- Create fluid heights
 
 ## Introduction
 
@@ -27,12 +27,12 @@ elastic, and fluid (sometimes referred to as liquid).
 
 In a fixed (static) layout, elements are sized using pixels. One of the nice
 things about this is that our elements will be the same size on all screens. It
-is a measurement that is independent and uneffected by the size of the device we
+is a measurement that is independent and unaffected by the size of the device we
 are viewing from. The only downside is if we create an element that is wider or
-taller than the device size we will see scrollbars, and the user will have to
+taller than the device size we will see scroll bars, and the user will have to
 scroll to see the rest of the content that is out of view. Or, if the screen
 size is much larger than our element there may be substantial white space around
-the element. In other words we are not neccesarily utilizing all of the screen
+the element. In other words we are not necessarily utilizing all of the screen
 space.
 
 #### Elastic (em)
@@ -51,7 +51,7 @@ elements set as ems. this way your text will always be in proportion to the
 container it is within. There are also some disadvantages such as, if a user
 scales elements that occupy the same space overlap is possible unless the
 developer invests a lot of time testing font sizes across many different device
-sizes and make s adjustments accordingly. 
+sizes and make s adjustments accordingly.
 
 #### Fluid (%)
 
