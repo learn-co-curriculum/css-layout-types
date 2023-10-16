@@ -3,7 +3,8 @@
 ## Learning Goals
 
 - Use CSS layout types: Fixed, Elastic, and Fluid
-- Set sizing properties: width, min-width, max-width, height, min-height, and max-height
+- Set sizing properties: width, min-width, max-width, height, min-height, and
+  max-height
 - Set sizing elements using (px) pixel values
 - Set sizing elements using (em) em values
 - Set sizing elements using (%) percent values
@@ -13,17 +14,17 @@
 ## Introduction
 
 This lesson will discuss sizing elements and the differences between using
-pixels, ems, percents, and the overflow property.
+pixels, ems, rems, percents, and the overflow property.
 
 Make sure to check out the code examples in the Resources section to see how
 these properties work!
 
-### Layout Types
+## Layout Types
 
 Let's discuss CSS layout types: fixed (sometimes referred to as static),
 elastic, and fluid (sometimes referred to as liquid).
 
-#### Fixed (px)
+### Fixed (px)
 
 In a fixed (static) layout, elements are sized using pixels. One of the nice
 things about this is that our elements will be the same size on all screens. It
@@ -35,11 +36,19 @@ size is much larger than our element there may be substantial white space around
 the element. In other words we are not necessarily utilizing all of the screen
 space.
 
-#### Elastic (em)
+### Relative Units
 
-Elastic layouts size elements using (em) ems. An em is a typographic unit that
-describes a the size of a single character, typically the default is 1em = 16 px
-in size.
+Relative units allow elements to automatically adjust their size based on UI
+changes.
+
+#### Ems
+
+An `em` is a typographic unit that describes a the size of a single character,
+typically the default is 1em = 16 px in size.
+
+If a paragraph has a font size of 16px, and we give it a bottom padding of
+`2em`, we can expect that element will have `32px` (2 x 16px) of cushion
+underneath.
 
 > “A pixel is an unscalable dot on a computer screen, whereas an em is a square
 > of its font size. Because font sizes vary, the em is a relative unit that
@@ -48,19 +57,37 @@ in size.
 One advantage of using ems to scale elements in a layout is that as a user
 scales the text up and down using their zoom settings it will also scale the
 elements set as ems. this way your text will always be in proportion to the
-container it is within. There are also some disadvantages such as, if a user
-scales elements that occupy the same space overlap is possible unless the
-developer invests a lot of time testing font sizes across many different device
-sizes and make s adjustments accordingly.
+container it is within.
+
+There are also some disadvantages such as, if a user scales elements that occupy
+the same space overlap is possible unless the developer invests a lot of time
+testing font sizes across many different device sizes and make s adjustments
+accordingly. Another disadvantage is that `em` units are difficult to
+incorporate into modern component based architectures. A component's UI can
+change depending on the font size of the container it's placed in which can lead
+to surprising results.
+
+#### Rems
+
+The `rem` unit is always relative to the root element, the `<html>` tag.
+
+All of the `rem` values in your application will be using the `font-size` value
+defined in the root HTML tag. By default, the HTML tag has a font size of
+`16px`, so `1rem will be equal to 16px`.
+
+Note that you should not set a `px` font size on the `<html>` tag since it will
+override a user's chosen default font size. If the user changes their default
+browser font size, the UI elements that are using `rem` units will resize
+automatically.
 
 #### Fluid (%)
 
 Fluid (liquid) layouts size elements using (%) percents. This allows for a
-layout that will stretch and expand or contract to the size of the users
-device. This allows developers to make use of the entirety of space on the
-screen. Also your users will never see scroll bars if used it is implemented
-correctly. Some drawbacks would be that as designers we lose some control over
-where media and text will wrap as screens change size on different devices.
+layout that will stretch and expand or contract to the size of the users device.
+This allows developers to make use of the entirety of space on the screen. Also
+your users will never see scroll bars if used it is implemented correctly. Some
+drawbacks would be that as designers we lose some control over where media and
+text will wrap as screens change size on different devices.
 
 #### Hybrid
 
@@ -70,7 +97,7 @@ different situations. It is best to understand the pros and cons of each type
 and understand when to use one the other or blend them together. More on
 responsive design techniques will be discussed in a later lesson.
 
-### Scaling Properties
+## Scaling Properties
 
 In order to size our elements we can use the width, height, and min and max
 properties for each. Below are a list of these properties with some possible
@@ -88,7 +115,7 @@ values separated by `|` pipes.
 
 `max-height: 1px | 1em | 100%`
 
-### Overflow
+## Overflow
 
 Occasionally when content is larger than its element, it will overflow outside
 of it. The `overflow` property allows us to control the way content displays
@@ -120,7 +147,7 @@ but able to be scrolled to. This essentially turns the element into a small
 scrolling window where you can scroll to reveal the hidden content within the
 element.
 
-### Creating Fluid Heights
+## Creating Fluid Heights
 
 In order to create a fluid height, it is important to understand that a height
 of a percentage only takes up a percent in relation to its parent element. Let's
@@ -130,15 +157,17 @@ that div to height 100%. Even though the div has 100% height, its parent element
 order to scale our div the full height of the screen we have to set any parent
 elements (html, body) to 100% height also.
 
- ```html
+```html
 <body>
   <div>Hello</div>
 </body>
 ```
 
 ```css
-html, body, div {
-    height: 100%;
+html,
+body,
+div {
+  height: 100%;
 }
 ```
 
@@ -150,8 +179,8 @@ with CSS. To summarize:
 - We can size elements using width, height, and min and max values. These
   properties accept pixels, ems, and percents as values.
 - Fixed Layouts use pixels. Pixels size look the same on all devices, but may
-  create scroll bars of the content is wider than the device or leave empty space
-  if the content is much smaller than the device size.
+  create scroll bars of the content is wider than the device or leave empty
+  space if the content is much smaller than the device size.
 - Elastic Layouts use ems (a typographic unit of measure). Ems insure that when
   a user scales up and down the content, it will maintain the size relationship
   between the layout element and the size of the text within it. This requires
